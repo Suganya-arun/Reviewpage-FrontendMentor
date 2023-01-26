@@ -1,0 +1,135 @@
+/*****************************Element Selectors*************************/
+
+  body{
+    font-family: 'Barlow Semi Condensed', sans-serif;
+    text-align: center;
+    background-color: hsl(210, 46%, 95%);
+    font-size: 14px;
+    line-height: 1.5;
+  }
+  h1{
+    font-size: 15px;
+    letter-spacing: 1px;
+  }
+  /*******************class selectors******************************/
+  .main-container
+  {
+    display:grid;
+    margin:15% 7%;
+    gap:2.5rem;
+    text-align: left;
+  }
+  .container-fluid
+  {
+    width:50%;
+  }
+  .image
+  {
+    width:50px;
+    border:1px solid transparent;
+    border-radius: 50%;
+    float:left;
+    margin-right:1.2em;
+    margin-bottom: .5rem;
+
+  }
+  .container-1
+  {
+    background-color:hsl(263, 55%, 52%) ;
+    background-image: url("../images/bg-pattern-quotation.svg");
+    border-radius:5px;
+     border:1px solid transparent;
+       padding:2em;
+     background-repeat: no-repeat;
+     background-position: right top;
+     color:white;
+  }
+  .container-2
+  {
+    border-radius:5px;
+     border:1px solid transparent;
+       padding:2em;
+background-color: hsl(217, 19%, 35%);
+color:white;
+  }
+   .container-3
+  {
+    border-radius:5px;
+     border:1px solid transparent;
+       padding:2em;
+background-color:hsl(0, 0%, 100%);
+color:hsl(219, 29%, 14%);
+  }
+   .container-4
+  {
+    border-radius:5px;
+     border:1px solid transparent;
+       padding:2em;
+background-color:hsl(219, 29%, 14%) ;
+color:white;
+  }
+   .container-5
+  {
+    border-radius:5px;
+    /* height:100%; */
+     border:1px solid transparent;
+       padding:2em;
+background-color: hsl(0, 0%, 100%);
+color:hsl(219, 29%, 14%);
+  }
+  .image-text p{
+    margin:0;
+  }
+  .review
+  {
+    opacity: 70%;
+  }
+  .tag
+  {
+    margin-top:0;
+    margin-bottom:20px;
+    opacity: 50%;
+  }
+  .attribution a {
+    color: hsl(228, 45%, 44%);
+  }
+  .attribution {
+    font-size: 11px;
+    text-align: center;
+  }
+  @media screen and (min-width:576px) {
+    .main-container{
+       width:1200px; 
+       height:600px;
+      /* grid-template-columns: repeat(5, minmax(0, 1fr)); */
+       grid-template-columns: auto auto auto auto auto; 
+      /* margin-bottom: 20%; */
+      margin:7% auto 7% auto;
+      text-align: left;
+    }
+    h1{
+      font-size: 15px;
+      letter-spacing: 1px;
+    }
+    .container-1
+    {
+      /* height:300px;  */
+      grid-column: 1/4;
+    }
+    .container-3{
+     grid-row-start: 2;
+    }
+    .container-4{
+      grid-row-start: 2;
+      grid-column-start: 2;
+      grid-column: 2/5;
+    }
+    .container-5{
+      grid-row:1/3;
+      grid-column-start:5;
+    }
+
+    }
+    
+
+    
